@@ -1,0 +1,164 @@
+.cpos{
+	height: 480px;
+	position: relative;
+	background-color: #f4f4f4;
+}
+.category{
+	float: left;
+	width: 190px;
+	height: 480px;
+	margin-right: 10px;
+	background-color: #fefefe;
+	/*border: 1px solid #636363;*/
+	overflow: hidden;
+}
+.cate_menu{
+	list-style: none;
+	padding: 10px 0;
+	height: 450px;
+	color: #636363;
+	margin-top: 10px;
+	background-color: #fefefe;
+}
+.cate_menu li{
+	height: 25px;
+	padding-left: 18px;
+}
+.cate_menu_item a{
+	
+	color: #333;
+	font-size: 12px;
+	line-height: 25px;
+	
+}
+.cate_menu_item a:hover{
+	color: #c81623;
+}
+.cate_menu_line{
+	padding: 0 2px;
+	font-size: 12px;
+}
+.mainpos{
+	float: left;
+	width: 790px;
+	height: 480px;
+	/*background-color: green;*/
+	position: relative;
+}
+.assist{
+	float: right;
+	width: 190px;
+	height: 480px;
+	margin-left: 10px;
+	/*background-color: blue;*/
+}
+.focus{
+	margin-right: 10px;
+	width: 590px;
+	height: 470px;
+	float: left;
+
+}
+.recommend{
+	float: left;
+	/*background-color: pink;*/
+	width: 190px;
+	height: 480px;
+	overflow: hidden;
+}
+.recommend ul{
+	flex-flow: column;
+}
+.rec_poster li{
+	position: relative;
+	right: 15px;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+.user{
+	height: 102px;
+	border-bottom: 1px solid #ccc;
+	/*background-color: red;*/
+	/*padding: 15px;*/
+}
+.login {
+	width: 95px;
+	height: 35px;
+	line-height: 20px;
+	font-size: 12px;
+	white-space: nowrap;  /* 强制一行内显示 */
+	overflow: hidden;  /* 溢出隐藏 */
+	text-overflow: ellipsis; /* 超出的部分显示 省略号 */
+	color: #666;
+	padding-top: 67px;  
+	position: relative;
+}
+.login a {
+	color: #666;
+}
+.login a:hover {
+	color: #f10512;
+}
+.user_avatar{
+	position: absolute;
+	left: 20px;
+	top: 13px;
+	width: 44px;
+	height: 44px;
+}
+.user_avatar_lk{
+	border: 2px solid #fff;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user_show{
+	position: absolute;
+	top: 16px;
+	left: 74px;
+	right: 10px;
+	color: #666;
+	width: 106px;
+	height: 38px;
+}
+
+.news{
+	height: 334px;
+	/*background-color: yellow;*/
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+
+.news_hd{
+	height: 20px;
+	padding: 10px 0 0;
+	position: relative;
+	line-height: 20px;
+	margin-bottom: 8px;
+}
+.news h5{
+	font-size: 14px;
+	color: #333;
+	margin-left: 15px;
+}
+.news_list{
+	position: relative;
+	margin: 0 15px;
+	height: 88px;
+}
+.news_list li{
+	max-width: 160px;
+	height: 24px;
+	line-height: 24px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #999;
+	margin-bottom: 6px;
+}
+
+
+
+
