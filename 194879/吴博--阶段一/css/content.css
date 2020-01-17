@@ -1,0 +1,239 @@
+body{
+            background-color: #f4f4f4;
+        }
+        .content{
+            height: 470px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .content>div{
+            flex: none;
+            margin-right: 10px;
+        }
+        .content .content_items{
+            background-color: white;
+            width: 190px;
+            font-size: 14px;
+        }
+        .content .content_items a{
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+            color: black;
+        }
+        .content .content_items a:hover{
+            color: red;
+        }
+        .content .content_items ul{
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        .content .content_items ul li{
+            overflow: hidden;
+            padding-left: 18px;
+            transition: background-color 0.2s ease;
+            height: 25px;
+            line-height: 25px;
+        }
+        .content .content_items ul li:hover{
+            background-color: #bdbdbd;
+        }
+        .content .content_poster{
+            /*background-color: gold;*/
+            width: 790px;
+            overflow: hidden;
+
+        }
+        .content .content_poster .main_poster{
+            width: 590px;
+            float: left;
+            overflow: hidden;
+        }
+        .content .content_poster .main_poster img{
+            width: 590px;
+            height: 470px;
+        }
+        .content .content_poster .slide_poster{
+            width: 190px;
+            height: 100%;
+            float: right;
+            overflow: hidden;
+        }
+        .content .content_poster .slide_poster ul{
+            width: 190px;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+        }
+        .content .content_poster .slide_poster a{
+            width: 190px;
+            height: 153px;
+            display: block;
+        }
+        .content .content_poster .slide_poster img{
+            width: 190px;
+            height: 153px;
+            transition: opacity 0.2s ease;
+        }
+        .content .content_poster .slide_poster img:hover{
+            opacity: 0.7;
+        }
+        .content .content_login{
+            width: 190px;
+            background-color: white;
+            margin-right: -10px;
+        }
+        .content .content_login .login_part1{
+            height: 33px;
+            position: relative;
+            padding-top: 67px;
+        }
+        .content .content_login .login_part1::after{
+            position: absolute;
+            height: 1px;
+            left: 15px;
+            right: 15px;
+            bottom: 0;
+            content: '';
+            background: linear-gradient(270deg, white, #eee, #eee, white);
+        }
+        .content .content_login .login_part1 .user{
+            position: absolute;
+            top: 13px;
+            left: 20px;
+        }
+        .content .content_login .login_part1 .user_logo{
+            float: left;
+        }
+        .content .content_login .login_part1 .user_show{
+            float: left;
+            color: black;
+            font-size: 12px;
+            line-height: 1.5;
+            margin-left: 10px;
+        }
+        .content .content_login .login_part1 .user_show p a{
+            margin-top: 5px;
+            color: black;
+        }
+        .content .content_login .login_part1 .user_show p a:hover{
+            color: red;
+        }
+        .content .content_login .login_part1 .vip{
+            height: 25px;
+            text-align: center;
+        }
+        .content .content_login .login_part1 .vip a{
+            display: inline-block;
+            text-align: center;
+            width: 70px;
+            height: 25px;
+            margin: 0 5px;
+            font-size: 12px;
+            line-height: 25px;
+            border-radius: 13px;
+            background-color: #e1251b;
+            color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .content .content_login .login_part1 .vip a:first-child:hover{
+            background-color: #b11d15;
+        }
+        .content .content_login .login_part1 .vip a:last-child{
+            color: #e2e200;
+            background-color: black;
+        }
+        .content .content_login .login_part1 .vip a:last-child:hover{
+            background-color: #b11d15;
+            color: white;
+        }
+        .content .content_login .login_part1 .user .user_logo a{
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,.05);
+            overflow: hidden;
+            text-align: center;
+        }
+        .content .content_login .login_part2{
+            height: 130px;
+            font-size: 12px;
+            position: relative;
+        }
+        .content .content_login .login_part2::after{
+            position: absolute;
+            height: 1px;
+            left: 15px;
+            right: 15px;
+            bottom: 0;
+            content: '';
+            background: linear-gradient(270deg, white, #eee, #eee, white);
+            z-index: 2;
+        }
+        .content .content_login .login_part2 .news_header{
+            padding-top: 10px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .content .content_login .login_part2 .news_header h4{
+            font-size: 14px;
+            margin-left: 15px;
+            display: inline-block;
+        }
+        .content .content_login .login_part2 .news_header a{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
+        .content .content_login .login_part2 .news_detail{
+            height: 88px;
+            margin: 0 15px;
+            line-height: 16px;
+        }
+        .content .content_login .login_part2 .news_detail li{
+            margin-bottom: 5px;
+        }
+        .content .content_login .login_part2 .news_detail li span:first-child{
+            display: inline-block;
+            text-align: center;
+            width: 35px;
+            height: 16px;
+            color: #e1251b;
+            margin-right: 6px;
+            background-color: rgba(225,37,27,.08);
+        }
+        .content .content_login .login_part3{
+            padding-top: 10px;
+            height: 240px;
+        }
+        .content .content_login .login_part3 a{
+            color: black;
+            text-decoration: none;
+            line-height: 1.5;
+            font-size: 12px;
+        }
+        .content .content_login .login_part3 a:hover{
+            color: red;
+        }
+        .content .content_login .login_part3 ul{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .content .content_login .login_part3 ul li{
+            width: 63px;
+            height: 55px;
+            flex: none;
+            overflow: hidden;
+            text-align: center;
+        }
+        .content .content_login .login_part3 ul li:hover img{
+            content: url("../images/login_part3_11.png");
+        }
+        .content .content_login .login_part3 ul li img{
+            width: 28px;
+            height: 28px;
+        }
