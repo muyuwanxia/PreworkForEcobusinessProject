@@ -1,0 +1,250 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #f4f4f4;
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    color: #666;
+}
+a{
+    color:#999;
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    text-decoration: none;
+}
+.redColor{
+    color: #C40000 !important;
+}
+.style-red {
+    color: #f10215 !important;
+}
+nav.top{
+    background-color: #e3e4e5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 30px;
+    width: 100%;
+}
+nav.top span, nav.top a, nav.top ul{
+    color: #999;
+    margin: 0px 10px 0px 10px;
+}
+nav.top a:hover{
+    color: #C40000;
+    text-decoration: none;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+li {
+    list-style: none;
+    float: left;
+}
+li.spacer {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 3px 5px 0;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+    color: #999;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    display: block;
+}
+#app{
+    position: relative;
+    z-index: 10;
+}
+.fr {
+    float: right;
+}
+
+div.footer{
+    margin: 0px 0px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #e7e7e7;
+}
+div.footer{
+    background: #f4f4f4;
+    padding:20px 0;
+}
+div.footer a{
+    color: #666;
+}
+div.footer a:hover{
+    color: #C40000;
+    text-decoration: none;
+}
+div.footer_ensure{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+div.footer_ensure img{
+    width:100%;
+}
+div.footer_desc{
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #e7e7e7;
+    padding-top: 30px;
+    margin: 0px 60px;
+}
+div.footer_desc div.descColumn{
+    width: 16.5%;
+    float: left;
+    padding-left: 50px;
+}
+div.footer_desc div.descColumn span.descColumnTitle{
+    color: #646464;
+    font-weight: bold;
+    font-size: 16px;
+}
+div.footer_desc a{
+    display: block;
+    padding-top: 3px;
+}
+.slash{
+    margin: 0 10px;
+    color: #ccc;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.copyright_links{
+    padding: 15px 0;
+    border-top: 1px solid #e1e1e1;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+.copyright_info{
+    padding: 10px 0;
+    line-height: 22px;
+    color: #999;
+}
+
+.copyright{
+    padding: 15px 0;
+    text-align: center;
+}
+.copyright_info a{
+    color: #999!important;
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif !important;
+}
+.copyright_info a:hover{
+    color: #C40000;
+    text-decoration: none;
+}
+@media not all, only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all{
+    .mod_copyright_inter_ico_global, .mod_copyright_inter_ico_rissia {
+        background-repeat: no-repeat;
+        background-size: 113px 86.5px;
+        background-image: url(../img/copyright_inter.png);
+    }
+}
+@media not all, only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all {
+    .mod_copyright_inter_ico_global {
+        background-position: -38.5px -44.5px;
+    }
+}
+.mod_copyright_inter_ico {
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    vertical-align: -1px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+.mod_copyright_inter_ico_global {
+    width: 15px;
+    height: 12px;
+    margin-top: -1px;
+}
+.mod_copyright_inter_ico_rissia {
+    background-position: -168px -155px;
+}
+@media not all, only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all {
+    .mod_copyright_inter_ico_rissia {
+        background-position: -56px -44.5px;
+    }
+}
+@media not all, only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all {
+    .mod_copyright_inter_ico_indonesia, .mod_copyright_inter_ico_thailand {
+        background-repeat: no-repeat;
+        background-size: 113px 86.5px;
+        background-image: url(../img/copyright_inter.png);
+    }
+}
+@media not all, only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all {
+    .mod_copyright_inter_ico_indonesia {
+        background-position: -73.5px -44.5px;
+    }
+}
+@media not all, only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all {
+    .mod_copyright_inter_ico_spain {
+        background-repeat: no-repeat;
+        background-size: 113px 86.5px;
+        background-position: -38.5px -59px;
+        background-image: url(../img/copyright_inter.png);
+    }
+}
+.mod_copyright_inter_ico_spain {
+    background-repeat: no-repeat;
+    background-image: url(../img/copyright_inter.png);
+}
+@media not all, only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all {
+    .mod_copyright_inter_ico_thailand {
+        background-position: -91px -44.5px;
+    }
+}
+.copyright_auth{
+    margin: 25px 0;
+}
+.mod_copyright_auth_ico_2 {
+    background-position: -205px -111px;
+}
+.mod_copyright_auth_ico_1, .mod_copyright_auth_ico_2 {
+    background-repeat: no-repeat;
+    background-image: url(../img/copyright_auth.png);
+}
+.mod_copyright_auth_ico {
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    line-height: 1000px;
+}
+.mod_copyright_auth_ico_3, .mod_copyright_auth_ico_4 {
+    background-repeat: no-repeat;
+    background-image: url(../img/copyright_auth.png);
+}
+.mod_copyright_auth_ico_3 {
+    background-position: -205px -74px;
+}
+.mod_copyright_auth_ico_4 {
+    background-position: -205px -37px;
+}
+.mod_copyright_auth_ico_5, .mod_copyright_auth_ico_6 {
+    background-repeat: no-repeat;
+    background-image: url(../img/copyright_auth.png);
+}
+.mod_copyright_auth_ico_5 {
+    background-position: -205px 0;
+}
+.mod_copyright_auth_ico_6 {
+    background-position: 0 -155px;
+}

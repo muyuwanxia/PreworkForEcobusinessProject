@@ -1,0 +1,23 @@
+#head_ads{
+    background: rgb(221, 2, 28);
+}
+#head_ads .inner{
+    background: url("https://img11.360buyimg.com/babel/jfs/t1/104989/7/10219/39744/5e181d4cEa6aa088e/548a361ed7f788b6.jpg.webp") no-repeat 0 0 ;
+}
+#years_goods{
+    background: url("https://img10.360buyimg.com/img/jfs/t1/110618/33/1157/23262/5dfb1042E6a78f617/8dcbe24b912c0a77.jpg.webp") no-repeat 0 0;
+    background-size: cover;
+    width: 190px;
+    height: 80px;
+}
+#head_ads .iconfont {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#head_ads_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+

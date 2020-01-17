@@ -1,0 +1,22 @@
+.inner {
+     z-index: 1;
+     width: 1300px;
+     height: 100%;
+     margin: 0 auto;
+     position: relative;
+     overflow: hidden;
+ }
+a{
+     color: #999999;
+}
+a:hover{
+     color: red;
+     text-decoration-line: none;
+}
+span:hover{
+     color: red;
+     text-decoration-line: none;
+}
+ul{
+     padding: 0px !important;
+}

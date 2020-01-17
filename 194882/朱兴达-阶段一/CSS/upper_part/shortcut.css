@@ -1,0 +1,43 @@
+#shortcut {
+    height: 30px;
+    background-color: #E3E4E5;
+    border-bottom: 1px solid #DDDDDD;
+    color: #999;
+    position: relative;
+    z-index: 3;
+}
+#location
+{
+    line-height: 30px;
+    position: absolute;
+    float: left;
+    top: 0;
+}
+#navigation{
+    line-height: 30px;
+    top: 0;
+    float: right;
+}
+.navigation_item
+{
+    color: #999;
+    float: none;
+    margin: auto;
+}
+.navigation_spacer
+{
+    width: 1px;
+    height: 10px;
+    border-left: 1px solid #CCCCCC;
+    margin: 11px 5px 0;
+    padding: 0;
+}
+#location_dropdown{
+    color: #666666;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    width: 320px;
+    top: 30px;
+    left: 0;
+}
