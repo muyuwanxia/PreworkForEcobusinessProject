@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b3875ed3-b17d-4a52-89a1-0a8431d9ed91" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/java/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1Xm0H4DF8s21SOZUKTzDakT0hgx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Timi\Mybatis\mybatis-plus-3.0\mybatisplus_demo\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MybatisplusDemoApplicationTests.testSelectPage">
+    <configuration name="MybatisplusDemoApplicationTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.timi.test.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.timi" />
+      <option name="MAIN_CLASS_NAME" value="com.timi.MybatisplusDemoApplicationTests" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisplusDemoApplicationTests.selectMaps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.timi.test.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.timi" />
+      <option name="MAIN_CLASS_NAME" value="com.timi.MybatisplusDemoApplicationTests" />
+      <option name="METHOD_NAME" value="selectMaps" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisplusDemoApplicationTests.selectOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.timi.test.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.timi" />
+      <option name="MAIN_CLASS_NAME" value="com.timi.MybatisplusDemoApplicationTests" />
+      <option name="METHOD_NAME" value="selectOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisplusDemoApplicationTests.testSelectPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.timi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.timi" />
+      <option name="MAIN_CLASS_NAME" value="com.timi.MybatisplusDemoApplicationTests" />
+      <option name="METHOD_NAME" value="testSelectPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisplusDemoApplicationTests.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatisplus_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.timi.test.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.timi" />
+      <option name="MAIN_CLASS_NAME" value="com.timi.MybatisplusDemoApplicationTests" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisplusDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mybatisplus_demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.timi.MybatisplusDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MybatisplusDemoApplicationTests.testSelectPage" />
+        <item itemvalue="JUnit.MybatisplusDemoApplicationTests.update" />
+        <item itemvalue="JUnit.MybatisplusDemoApplicationTests.selectOne" />
+        <item itemvalue="JUnit.MybatisplusDemoApplicationTests.selectMaps" />
+        <item itemvalue="JUnit.MybatisplusDemoApplicationTests.delete" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b3875ed3-b17d-4a52-89a1-0a8431d9ed91" name="Default Changelist" comment="" />
+      <created>1581635871208</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581635871208</updated>
+      <workItem from="1581635877919" duration="3529000" />
+      <workItem from="1581654565556" duration="9360000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="313" y="123" key="#Inspections" timestamp="1581658874947">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="313" y="123" key="#Inspections/0.0.1440.920@0.0.1440.920" timestamp="1581658874947" />
+    <state x="526" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1581658240368">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="526" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.920@0.0.1440.920" timestamp="1581658240368" />
+    <state x="451" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581657007093">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="451" y="211" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.920@0.0.1440.920" timestamp="1581657007093" />
+    <state width="1397" height="247" key="GridCell.Tab.0.bottom" timestamp="1581663939292">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="247" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1581663939292" />
+    <state width="1397" height="247" key="GridCell.Tab.0.center" timestamp="1581663939291">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="247" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1581663939291" />
+    <state width="1397" height="247" key="GridCell.Tab.0.left" timestamp="1581663939291">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="247" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1581663939291" />
+    <state width="1397" height="247" key="GridCell.Tab.0.right" timestamp="1581663939291">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="247" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1581663939291" />
+    <state width="1397" height="242" key="GridCell.Tab.1.bottom" timestamp="1581663939285">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="242" key="GridCell.Tab.1.bottom/0.0.1440.920@0.0.1440.920" timestamp="1581663939285" />
+    <state width="1397" height="242" key="GridCell.Tab.1.center" timestamp="1581663939284">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="242" key="GridCell.Tab.1.center/0.0.1440.920@0.0.1440.920" timestamp="1581663939284" />
+    <state width="1397" height="242" key="GridCell.Tab.1.left" timestamp="1581663939284">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="242" key="GridCell.Tab.1.left/0.0.1440.920@0.0.1440.920" timestamp="1581663939284" />
+    <state width="1397" height="242" key="GridCell.Tab.1.right" timestamp="1581663939284">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="242" key="GridCell.Tab.1.right/0.0.1440.920@0.0.1440.920" timestamp="1581663939284" />
+    <state x="417" y="289" key="com.intellij.ide.util.TipDialog" timestamp="1581654593291">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="417" y="289" key="com.intellij.ide.util.TipDialog/0.0.1440.920@0.0.1440.920" timestamp="1581654593291" />
+    <state x="443" y="379" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1581656672159">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="443" y="379" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.920@0.0.1440.920" timestamp="1581656672159" />
+  </component>
+</project>

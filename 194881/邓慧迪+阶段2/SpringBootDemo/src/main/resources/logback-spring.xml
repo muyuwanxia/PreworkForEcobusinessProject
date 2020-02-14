@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <property name="LOG_HOME" value="H:/server-log/" />
+
+    <!--控制台输出-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%highlight(%d{yyyy-MM-dd HH:mm}) %boldYellow([%thread]) %-5level  %boldCyan([%logger{50}[%L]]) %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!--info日志输出-->
+    <appender name="FILE_INFO"  class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/service.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/service.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <MaxHistory>120</MaxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>100MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm} [%thread] %-5level %logger{50}[%L] - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!--error日志输出-->
+    <appender name="FILE_ERROR"  class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/error.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <MaxHistory>120</MaxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>100MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <!--输出error等级的日志-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{50}[%L] - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="Druid_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/log_druid.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${APPDIR}/info/log-druid-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>2MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <!-- 日志追加 -->
+        <append>true</append>
+        <!-- 日志文件的格式 -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger Line:%-3L - %msg%n</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+    </appender>
+    <logger name="com.alibaba.druid.filter.stat.StatFilter" level="ERROR" additivity="false">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="Druid_FILE" />
+    </logger>
+
+    <!--设置某个包或者类使用哪个appender-->
+    <logger name="com.seu.springboot.controller" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <!--全局日志级别-->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE_INFO" />
+        <appender-ref ref="FILE_ERROR" />
+    </root>
+
+</configuration>
