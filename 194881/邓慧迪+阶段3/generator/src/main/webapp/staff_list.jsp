@@ -71,6 +71,7 @@
             <div class="r_foot">
                 <div class="r_foot_m">
                     <a href="toAdd" class="btn">添加</a>
+                    <a href="query" class="btn">查询20-35岁雇员</a>
                 </div>
             </div>
             <!--右边底部-->

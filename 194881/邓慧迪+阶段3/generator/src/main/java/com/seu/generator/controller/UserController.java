@@ -1,6 +1,10 @@
 package com.seu.generator.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.seu.generator.mapper.UserMapper;
 import com.seu.generator.model.User;
 import com.seu.generator.service.impl.UserServiceImpl;
 import org.springframework.ui.Model;
@@ -14,9 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.math.BigInteger;
 import java.util.List;
-
-import static java.awt.SystemColor.info;
-
 /**
  * <p>
  *  前端控制器
@@ -31,6 +32,9 @@ public class UserController {
     @Resource
     UserServiceImpl userService;
 
+    @Resource
+    UserMapper userMapper;
+
     @GetMapping("/cha")
     public @ResponseBody Object selectOne(){
         return userService.getById(1094592041087729666L);
@@ -38,8 +42,28 @@ public class UserController {
 
     @GetMapping("/list")
     public String showList(Model model){
+
         List<User> userList=userService.list();
         model.addAttribute("LIST",userList);
+        return "staff_list";
+    }
+
+    @RequestMapping("/pagelist/{pagenumber}")
+    public String selectMyPage(Model model,@PathVariable Integer pagenumber) {
+
+        QueryWrapper<User> queryWrapper=new QueryWrapper<User>();
+        queryWrapper.ge("age",20);
+
+        Page<User> page=new Page<User>(pagenumber,2);
+
+        //IPage<User> iPage=userMapper.selectUserPage(page,queryWrapper);
+        IPage<User> iPage=userMapper.selectPage(page,queryWrapper);
+        System.out.println("总页数"+iPage.getPages());
+        System.out.println("当前页数"+iPage.getCurrent());
+        System.out.println("总记录数"+iPage.getTotal());
+        List<User> userList=iPage.getRecords();
+        model.addAttribute("LIST",userList);
+
         return "staff_list";
     }
 
@@ -64,7 +88,7 @@ public class UserController {
 
         Long id=Long.parseLong(request.getParameter("id"));
         String name = request.getParameter("name");
-        Integer age = Integer.valueOf(request.getParameter("age"));
+        Integer age = Integer.parseInt(request.getParameter("age"));
         String email = request.getParameter("email");
         Long managerId = Long.parseLong(request.getParameter("did"));
 
@@ -75,7 +99,7 @@ public class UserController {
         user.setManagerId(managerId);
 
         userService.updateById(user);
-        response.sendRedirect("/user/list");
+        response.sendRedirect("./list");
     }
 
     @GetMapping("/toAdd")
@@ -86,22 +110,35 @@ public class UserController {
     }
 
     @PostMapping("/add")
-    public void add(HttpServletRequest request,HttpServletResponse response) throws IOException {
+    public void add(Model model,HttpServletRequest request,HttpServletResponse response) throws IOException {
         User user=new User();
-        Long id=Long.parseLong(request.getParameter("id"));
+        //Long id=Long.parseLong(request.getParameter("id"));
         String name = request.getParameter("name");
         Integer age = Integer.valueOf(request.getParameter("age"));
         String email = request.getParameter("email");
         Long managerId = Long.parseLong(request.getParameter("did"));
 
-        user.setId(id);
+        //user.setId(id);
         user.setName(name);
         user.setAge(age);
         user.setEmail(email);
         user.setManagerId(managerId);
 
         userService.save(user);
-        response.sendRedirect("/user/list");
+
+        List<User> userList=userService.list();
+        model.addAttribute("LIST",userList);
+        response.sendRedirect("/demo/user/list");
+    }
+
+    @GetMapping("/query")
+    public String query(Model model){
+        QueryWrapper<User> queryWrapper=new QueryWrapper<User>();
+        queryWrapper.isNotNull("manager_id").between("age",20,35)
+                .orderByDesc("age").orderByAsc("id");
+        List<User> userList=userService.list(queryWrapper);
+        model.addAttribute("LIST",userList);
+        return "staff_list";
     }
 
 }

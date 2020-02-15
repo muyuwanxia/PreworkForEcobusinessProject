@@ -37,7 +37,7 @@
                 <span class="name">编辑员工</span>
             </div>
             <div class="space_hx">&nbsp;</div>
-            <form action="./edit" method="post" name="editForm">
+            <form action="/demo/user/edit" method="post" name="editForm">
                 <input type="hidden" name="id" value="${stf_toEdit.id}"/>
                 <div class="xjhy">
                     <!--高级配置-->
@@ -45,7 +45,7 @@
                         <li class="clearfix">
                             <span class="title">姓名：</span>
                             <div class="li_r">
-                                <input class="chang" name="account" value="<%=stf_toEdit.getName()%>">
+                                <input class="chang" name="name" value="<%=stf_toEdit.getName()%>">
 
                             </div>
                         </li>
@@ -71,13 +71,13 @@
                         <li class="clearfix">
                             <span class="title">年龄：</span>
                             <div class="li_r">
-                                <input class="chang" name="name" type="text" value="<%=stf_toEdit.getAge()%>">
+                                <input class="chang" name="age" type="text" value="<%=stf_toEdit.getAge()%>">
                             </div>
                         </li>
                         <li class="clearfix">
                             <span class="title">邮箱：</span>
                             <div class="li_r">
-                                <input class="chang" name="idNumber" type="text" value="<%=stf_toEdit.getEmail()%>">
+                                <input class="chang" name="email" type="text" value="<%=stf_toEdit.getEmail()%>">
                             </div>
                         </li>
                         <li class="tj_btn">

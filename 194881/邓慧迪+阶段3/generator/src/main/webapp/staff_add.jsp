@@ -38,17 +38,9 @@
                 <span class="name">添加员工</span>
             </div>
             <div class="space_hx">&nbsp;</div>
-            <form action="./add" method="post" name="addForm">
+            <form action="/demo/user/add" method="post" name="addForm">
                 <div class="xjhy">
                     <!--高级配置-->
-                    <ul class="hypz gjpz clearfix">
-                        <li class="clearfix">
-                            <span class="title">ID：</span>
-                            <div class="li_r">
-                                <input class="chang" name="id" type="text"/>
-                                <i>*</i>
-                            </div>
-                        </li>
                         <li class="clearfix">
                             <span class="title">姓名：</span>
                             <div class="li_r">
@@ -79,7 +71,7 @@
                         </li>
                         <li class="tj_btn">
                             <a href="javascript:history.go(-1);" class="back">返回</a>
-                            <a href="javascript:addForm.submit();">保存</a>
+                            <a href="javascript:addForm.submit();" class="back">保存</a>
                         </li>
                     </ul>
                     <!--高级配置-->
